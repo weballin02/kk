@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannabis Ownership Modification Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>California Cannabis Ownership Modification Guide</h1>
+        
+        <!-- Modification Type Selection -->
+        <label for="modificationType">Select Modification Type:</label>
+        <select id="modificationType" onchange="updateModificationType()">
+            <option value="">--Choose Modification Type--</option>
+            <option value="ownerAdd">Add New Owner</option>
+            <option value="ownerRemove">Remove Existing Owner</option>
+            <!-- Add other modification types as needed -->
+        </select>
+
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <h3>Modification Progress</h3>
+            <div class="progress-bar">
+                <div id="progress-bar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+        
+        <!-- Checklist -->
+        <div id="checklist-section">
+            <h3>Checklist</h3>
+            <ul id="checklist">
+                <!-- Checklist items will be added dynamically based on modification type -->
+            </ul>
+        </div>
+
+        <!-- Helper Section with Tooltips and Expandable Help/FAQ -->
+        <div id="helper-section">
+            <h3>Notifications and Requests to Modify a License – Instructions</h3>
+            <p>Follow each step based on the modifications. Click each step for detailed requirements.</p>
+
+            <button onclick="expandAll()">Expand All</button>
+            <button onclick="collapseAll()">Collapse All</button>
+
+            <ul id="notification-list">
+                <!-- Notification list items will be dynamically populated -->
+            </ul>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq" onclick="toggleFaq(this)">What is the deadline for Change in Ownership? <span class="faq-answer">14 days from effective change date.</span></div>
+            <!-- Additional FAQ items -->
+        </div>
+
+        <!-- Final Review & Submit -->
+        <button onclick="finalReview()">Final Review</button>
+        <button onclick="submitApplication()">Submit</button>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

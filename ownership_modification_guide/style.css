@@ -1,0 +1,18 @@
+/* General Styles */
+body { font-family: Arial, sans-serif; }
+
+/* Progress Bar */
+.progress-bar { width: 100%; background: #e0e0e0; height: 25px; margin-bottom: 20px; }
+#progress-bar { background: #007acc; color: #fff; text-align: center; height: 100%; }
+
+/* Checklist Styling */
+#checklist li { margin: 10px 0; }
+#checklist input[type="checkbox"] { margin-right: 10px; }
+
+/* Tooltip Styling */
+.title { font-weight: bold; color: #007acc; cursor: pointer; }
+.tooltip { display: none; margin-left: 5px; color: #555; font-size: 0.9em; }
+
+/* FAQ Styling */
+.faq { cursor: pointer; font-weight: bold; color: #007acc; }
+.faq-answer { display: none; margin-top: 5px; color: #333; }
