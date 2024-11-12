@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC License Application Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>California ABC License Application Guide</h1>
+    <label for="licenseType">Select License Type:</label>
+    <select id="licenseType" onchange="selectLicenseType()">
+      <option value="">--Choose a License Type--</option>
+      <option value="type17">Type 17: Beer and Wine Wholesaler</option>
+      <option value="type18">Type 18: Distilled Spirits Wholesaler</option>
+      <option value="type20">Type 20: Off-Sale Beer & Wine</option>
+      <option value="type21">Type 21: Off-Sale General</option>
+      <option value="type41">Type 41: On-Sale Beer & Wine – Eating Place</option>
+      <option value="type47">Type 47: On-Sale General – Eating Place</option>
+    </select>
+
+    <div id="application-form" style="display: none;">
+      <h3>Application Form</h3>
+      <form id="licenseApplication">
+        <div id="form-fields"></div>
+        <div id="file-uploads"></div>
+
+        <!-- Links to Blank Forms -->
+        <h3>Required Forms</h3>
+        <ul>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-211-SIG.pdf" target="_blank">ABC-211-SIG: Application Signature Sheet</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-217.pdf" target="_blank">ABC-217: Application Questionnaire</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-208-B.pdf" target="_blank">ABC-208-B: Individual Financial Affidavit</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-253.pdf" target="_blank">ABC-253: Supplemental Diagram</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-257.pdf" target="_blank">ABC-257: Licensed Premises Diagram</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-255.pdf" target="_blank">ABC-255: Zoning Affidavit</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-247.pdf" target="_blank">ABC-247: Residences Statement</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-251.pdf" target="_blank">ABC-251: Consideration Points Statement</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-140.pdf" target="_blank">ABC-140: Tied-House Restrictions Certificate</a></li>
+          <li><a href="https://www.abc.ca.gov/wp-content/uploads/forms/ABC-256-LLC.pdf" target="_blank">ABC-256-LLC: LLC Statement</a></li>
+        </ul>
+
+        <button type="button" onclick="generatePackage()">Download Application Package</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
